@@ -1,0 +1,57 @@
+body,html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background:rgb(224, 17, 79) ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center ;
+    align-items: center;
+    overflow: hidden;
+}
+.form-box{
+    width: 300px;
+    padding: 40px;
+    background: rgb(71, 72, 73);
+    text-align: center;
+}
+.form-title{
+    color: floralwhite;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+/*editar input's*/
+.form-box input[type="text"],
+.form-box input[type="password"],
+.form-box button[type="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    padding: 14px 10px;
+    text-align: center;
+    border: 2px solid teal;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.form-box input[type="text"]:focus,
+.form-box input[type="password"]:focus{
+    width:280px ;
+    color:aliceblue ;
+}
+.form-box button[type="submit"]{
+    border: 0;
+    background: teal;
+    cursor: pointer;
+    border: 2px solid teal;
+}
+.form-box button[type="submit"]:hover{
+    background: none;
+}
